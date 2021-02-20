@@ -1,0 +1,115 @@
+<?php include 'mail.php';?>
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- documentation at http://getbootstrap.com/docs/4.1/, alternative themes at https://bootswatch.com/ -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="Images/Black Logo.ico" rel="icon">
+
+        <link href="styles.css" rel="stylesheet">
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+        <title>BlackBrush</title>
+
+
+
+    </head>
+    <body class="background">
+
+        <nav class="navbar navbar-expand-md navbar-dark border-bottom border-light fixed-top scrolling-navbar background">
+            <a class="navbar-brand" href="index.html">
+                <img src="Images/White2.png" height="55" alt="BlackBrush">
+            </a>
+            <button aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbar" data-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav ml-auto mt-2">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="our-story.html">Our Story</a></li>
+                        <li class="nav-item"><a class="nav-link" href="available-homes.html">Available Homes</a></li>
+                        <li class="nav-item"><a class="nav-link" href="rentals.html">Luxury Rentals</a></li>
+                        <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">News</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+                    </ul>
+            </div>
+        </nav>
+
+        <div class="center noHover" style="margin-top: 80px; border-bottom: 3px solid white"> 
+            <h1>News</h1>
+        </div>
+        <div class="portfolio center">
+            <a href="article1.html">
+                <div class="card center newsIm border-0" style="max-width: 50rem; margin-bottom: 20px; background-color: black">
+                    <img src="Images/potent2.jpg" class="card-img-top" alt="article1"></a>
+                    <div class="card-body">
+                        <a href="article1.html" style="color: white"><h5 class="card-title" style="font-weight: bold; color: white !important"><u>10 Tips to Prepare Your Home for the First Freeze of the Season</u></a><br><small>Oct 27, 2020</small></h5>
+                        <p class="card-text" style="color: white; padding-bottom: 10px">Is your home prepared for the first freeze of the winter? The cold winter months in Texas may not result in 12″ of snow, but you should still prepare your home for the climate change. If anything, use this chance as an opportunity to check up on your home.</p>
+                        <a href="article1.html" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </body>
+    <footer class="footer border-top" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <h5 class="left"><img class="left" src="Images/White2.png" height="55" alt="BlackBrush"></h5>
+                    <div class="left">
+                        <p class="left">We prioritize innovation over duplication. 
+                        We help our clients conceptualize, create, and build their ideas into spaces that create emotional and physical connections. 
+                        When you are ready to build, build with us.
+                        <br>--------<br>
+                        info@blackbrushhomes.com<br>(888) 888-8888
+                        <br><a href="https://www.facebook.com/BlackBrushHomes/" class="pl-0"><img class="left" src="Images/facebook.png" height="30" alt="Facebook"></a>
+                        <a href="https://www.instagram.com/blackbrushconstruction/" class="pl-0"><img class="left" src="Images/instagram.png" height="30" alt="Instagram"></a></p>
+                        
+                    </div>
+                    <br>
+                </div>              
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    
+                        <h5 class="text-md-center">Contact Us</h5>
+                        <hr>
+                    
+                    <form name="myForm" method="post" action="#contact">
+                        <fieldset class="form-group lefter">
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Full name" value="<?php echo $name;?>" required><span class="error"><?php echo "<p style='color:red;'>" .$nameErr. "</p>";?></span>
+                        </fieldset>
+                        <fieldset class="form-group righter">
+                            <input type="text" name="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" value="<?php echo $email;?>" required><span class="error"><?php echo "<p style='color:red;'>" .$emailErr. "</p>";?></span>
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <input type="text" name="number" class="form-control" id="number" placeholder="Enter phone number (optional)" value="<?php echo $number;?>" ><span class="error"><?php echo "<p style='color:red;'>" .$numberError. "</p>";?></span>
+                        </fieldset>
+                        <fieldset class="form-group clear">
+                            <textarea name="message" class="form-control" id="exampleMessage" placeholder="Message" required><?php echo $message;?></textarea><span class="error"><?php echo "<p style='color:red;'>" .$messageError. "</p>";?></span>
+                        </fieldset>
+                        <fieldset class="form-group text-xs-right">
+                            <button type="submit" name="submit" class="btn btn-secondary-outline btn-lg" value="Submit">Send</button><br><br><span class="success"><?php echo "<p style='color:green;'><b>" .$successMessage. "</b></p>";?></span>
+                        </fieldset>
+                    </form>
+                </div>
+                <div style="margin: 0 auto">
+                            <p style="font-size:12px">© 2021 BlackBrush Construction, Llc</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</html>

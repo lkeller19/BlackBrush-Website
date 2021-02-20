@@ -1,0 +1,418 @@
+/* 
+testblackbrush.atwebpages.com
+3711033_red
+Iwbi1102
+!UTyale512
+
+API KEY GOOGLE MAPS - AIzaSyDirnB-wjPuACb0Fzafsa_1M6cuyfnrNJA
+ */
+
+
+nav .navbar-brand
+{
+    /* size for brand */
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.navbar a{
+    font-family: Adobe Devangari !important;
+}
+
+main .form-control
+{
+    /* center form controls */
+    display: inline-block;
+
+    /* override Bootstrap's 100% width for form controls */
+    width: auto;
+}
+
+main
+{
+    /* scroll horizontally as needed */
+    overflow-x: auto;
+
+    /* center contents */
+    text-align: center;
+}
+
+main img
+{
+    /* constrain images on small screens */
+    max-width: 100%;
+}
+
+@font-face { 
+    font-family: Main; src: url('Fonts/adobe-devanagari_844.otf'); 
+} 
+
+.background {
+  text-align: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: black;
+  background-position: left bottom;
+  background-size: contain;
+}
+
+.back {
+    text-align: center;
+    background-repeat: no-repeat;
+    /* background-image: url('Images/potent.jpg'); */
+    background-attachment: fixed;
+    background-color: black;
+    background-position: center top;
+    background-size: cover;
+    /* height:100vh; */
+    transition: height 1000ms ease;
+    -webkit-transition: height 1000ms ease;
+    -moz-transition: height 1000ms ease;
+    -o-transition: height 1000ms ease;
+  }
+
+  .homeback {
+    text-align: center;
+    background-repeat: no-repeat;
+    /* background-image: url('Images/house.jpg'); */
+    background-attachment: fixed;
+    background-color: #292c2f;
+    background-position: center center;
+    background-size: cover;
+    transition: height 1000ms ease;
+    -webkit-transition: height 1000ms ease;
+    -moz-transition: height 1000ms ease;
+    -o-transition: height 1000ms ease;
+  }
+
+  .blackback {
+    background-color: black;
+    top: 100px;
+    margin: auto;
+  }
+
+
+
+  .back2 {
+    text-align: center;
+    background-repeat: no-repeat;
+    background-image: url('Images/main.jpg');
+    background-attachment: fixed;
+    background-color: black;
+    background-position: center top;
+    background-size: cover;
+    height:480px;
+    position:relative;
+    bottom:500px;
+    padding: 80px;
+    z-index: -1;
+  }
+
+/* h2 {
+    border-top: 1px dashed white;
+    border-bottom: 1px dashed white;
+    width: 3em;
+    margin: auto;
+    font-family: Main;
+}
+
+h3 {
+    width: 7em;
+    margin: auto;
+} */
+
+.cardfontcolor {
+    color: black;
+}
+
+.wid {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+body {
+    color: white;
+    font-family: inblaze;
+    padding-top: 25px;
+}
+
+.center {
+    margin: auto;
+}
+
+/* taken from https://stackoverflow.com/questions/22196587/how-to-vertically-center-a-container-in-bootstrap */
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+
+
+.card:hover {
+    border: 1px solid red;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 25vw;
+    object-fit: cover;
+}
+
+/* h4 {
+    text-decoration: underline;
+} */
+
+.width {
+    max-width: 15em;
+}
+
+@media (min-width: 992px){
+    .navbar li {
+        margin-left : 1em;
+        margin-right : 1em;
+    }
+}
+
+  footer {
+    padding-top: 30px;
+    background-color: #292c2f;
+    color: #bbb;
+    margin: 0;
+  }
+  
+  footer a {
+    color: #999;
+    text-decoration:none;
+  }
+  
+  footer a:hover, footer a:focus {
+    color: #aaa;
+    text-decoration:none;
+    border-bottom:1px dotted #999;
+  }
+  
+  footer .form-control {
+      background-color: #1f2022;
+      box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+      border: none;
+      resize: none;
+      color: #d1d2d2;
+      padding: 0.7em 1em;
+  }
+
+
+  .left {
+      text-align: left;
+  }
+
+  .bottomDiv{
+    position:relative;
+    top:30vh;
+    /* left:300px; */
+    margin: auto;
+    background: rgba(0, 0, 0, 0.65) !important;
+ }
+
+ .quote {
+   /* top: 80px; */
+   margin:auto;
+   /* background: rgba(0, 0, 0, 0.65) !important; */
+   background-color: transparent !important;
+ }
+
+ /* .threeDiv{
+    position:relative;
+    bottom:30vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    margin-bottom: -28vh;
+ } */
+
+ .threeDiv {
+   margin-top: -30px;
+   padding-left: 5vw;
+   padding-right: 5vw;
+   padding-bottom: 10px;
+ }
+
+ .twoDiv {
+  margin-top: -30px;
+  padding-left: 15vw;
+  padding-right: 15vw;
+  padding-bottom: 10px;
+ }
+
+ @media (max-width: 992px){
+
+
+ .twoDiv {
+  margin-top: -30px;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-bottom: 10px;
+}
+
+}
+
+ .extra {
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-bottom: 10px;
+  padding-left: 5vw;
+   padding-right: 5vw;
+   padding-bottom: 10px;
+ }
+
+
+
+ .dot {
+    background-color:rgba(235, 245, 255);
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  /* .half {
+    background-image: linear-gradient(bottom, white 50%, transparent 50%);
+    background-image: -o-linear-gradient(bottom, white 50%, transparent 50%);
+    background-image: -moz-linear-gradient(bottom, white 50%, transparent 50%);
+    background-image: -webkit-linear-gradient(bottom, white 50%, transparent 50%);
+    background-image: -ms-linear-gradient(bottom, white 50%, transparent 50%);
+  } */
+
+  .imgc { 
+    border: 1px solid black;
+  } 
+  .imgc:hover {  
+    border-radius: 5% 20% 5%;
+  } 
+
+  /* .imgg {  */
+    /* border: 1px solid black; */
+  /* }  */
+  .imgg:hover {  
+    border-radius: 40px;
+  } 
+
+  u:hover {
+      color: #0645AD;
+  }
+
+  .lefter{
+    float: left;
+    width: 49%;
+    padding-right: 1%;
+  }
+
+  .righter{
+      padding-left: 1%;
+  }
+  
+  /* .clear{
+    clear:both;
+  } */
+
+  .noHover {
+    pointer-events: none;
+  }
+
+  .portfolio {
+    margin-top: 10px;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-bottom: 10px;
+  }
+
+  .portim {
+    object-fit: cover !important;
+    width: 20rem !important;
+    height: 20rem !important;
+  }
+
+  .availIm {
+    object-fit: cover !important;
+    max-width: 40rem !important;
+    max-height: 40rem !important;
+  }
+
+  .textcolor {
+    color: rgba(243,164,71);
+  }
+
+  .xpad {
+    padding-bottom: 10px;
+  }
+
+  .newsIm {
+    object-fit: cover !important;
+  }
+
+  .funborder {
+    border: none;
+    border-radius: 40px 40px 0px 0px;
+  }
+
+  #map {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+  }
+
+
+  .item {
+    width: 30px;
+    height: 30px;
+  }
+
+  .error {color: #FF0000 !important;}
+
+  .success {color: green !important;}
+
+/* .fill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.fill img {
+  flex-shrink: 0;
+
+  width: 20%;
+
+} */
+
+.title {
+  border-bottom: 1px solid white;
+  padding-bottom: 10px;
+}
+
+.hook {
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+}
+
+.tabled {
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+  border-right: 1px solid darkgray;
+  border-left: 1px solid darkgray;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-right: 20px;
+}
+
+th {
+
+  font-size: 1.5em; 
+  font-weight: normal;
+  padding-top: 10px;
+}
+
+
+  
